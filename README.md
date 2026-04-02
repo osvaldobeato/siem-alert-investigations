@@ -50,7 +50,7 @@ The SOC team had prior knowledge that a vulnerability assessment was being condu
 
 ## Investigation Method (5 W's)
 
-* Who: Vulnerability Assessment Team (internal)
+* Who: Vulnerability Assessment Team (internal) using NESSUS
 * What: Port scanning activity
 * When: During the scheduled testing period
 * Where: Internal network (10.0.0.8 → 10.0.0.3)
