@@ -77,3 +77,12 @@ The SOC team had prior knowledge that a vulnerability assessment was being condu
 * Recognizing legitimate tools (like Nessus) helps reduce false positives
 * Proper documentation is essential in SOC workflows
 * Observed responses (e.g., port 22/SSH) should be reviewed to ensure proper security configuration
+
+## Evidence
+
+### SIEM Alert
+![SIEM Alert] <img width="918" height="663" alt="Screenshot 2026-04-02 014214" src="https://github.com/user-attachments/assets/7fdf7086-026d-4adc-b618-f6777c0b5f8d" />
+
+
+### Log Analysis
+![Logs] <img width="884" height="646" alt="Screenshot 2026-04-02 014330" src="https://github.com/user-attachments/assets/5f8cc5c6-7df8-4056-aa21-76b70da1ed81" />
