@@ -185,6 +185,101 @@ The screenshot below shows why SIEM alert triggered based this rule
 ### RESPONSE
 <img width="737" height="410" alt="case2-response" src="https://github.com/user-attachments/assets/7524fa9d-6959-45a9-821d-42df17db3c2a" />
 
+## Case 3: Incident Response (EDR Lab)
 
+### Scenario
+A phishing email was sent to multiple users within an organization. The email contained a malicious attachment (`Payslip.pdf`). Once downloaded and executed, the file triggered malicious activity across several hosts.
+
+The objective was to investigate the incident using EDR tools, identify affected systems, and take appropriate response actions.
+
+---
+
+### Investigation Summary
+
+- Malicious email sender identified as: **Jeff Johnson**
+- Threat vector: **Email attachment**
+- Malicious file: **Payslip.pdf**
+- Multiple hosts downloaded the file
+- Only one host executed the malware
+- Malicious activity included **PowerShell execution** and **DNS queries**
+
+---
+
+### Key Findings
+
+- **Number of devices that downloaded the file:** 3  
+- **Number of devices that executed the file:** 1  
+
+- **Affected Hosts:**
+  - Host-ATYU → Downloaded (Quarantined)
+  - Host-IOPE → Downloaded (Quarantined)
+  - Host-HKNV → Executed (Investigated & Isolated)
+
+---
+
+### Attack Timeline
+
+1. User received phishing email
+2. User downloaded `Payslip.pdf`
+3. File executed on host
+4. PowerShell process launched
+5. Malicious DNS query detected
+6. EDR triggered alert: **Malware detected**
+7. Response actions taken:
+   - Quarantine affected hosts
+   - Isolate infected machine
+
+---
+
+### Actions Taken
+
+- Quarantined hosts that downloaded the file
+- Isolated infected host (Host-HKNV)
+- Investigated process execution chain
+- Confirmed malicious behavior via EDR telemetry
+
+---
+
+### Tools Used
+
+- EDR Platform (TryHackMe Lab)
+- Windows Environment
+- Process Timeline Analysis
+
+---
+
+### Evidence
+
+#### Phishing Email
+
+<img width="917" height="664" alt="case3-01-Phising-email" src="https://github.com/user-attachments/assets/201a43f9-a06b-466e-bb57-9623890843b7" />
+
+
+#### Malware Detection Alert
+
+<img width="921" height="794" alt="case3-02-malware-detection-alert" src="https://github.com/user-attachments/assets/08083b42-0f93-4da5-98df-31a97536cb39" />
+
+
+#### Affected Hosts
+
+<img width="913" height="549" alt="case3-03-affected-hosts" src="https://github.com/user-attachments/assets/bbc347ae-d7ad-4759-83c4-40acd7381ee3" />
+
+
+#### Investigation Timeline
+
+<img width="902" height="592" alt="case3-04-investigation-timeline" src="https://github.com/user-attachments/assets/bd2e05ce-86f8-4e34-873d-269486d69279" />
+
+
+---
+
+### Conclusion
+
+This incident demonstrates how phishing emails can lead to malware infections within an organization. Through EDR analysis, it was possible to:
+
+- Identify the initial infection vector
+- Track execution across hosts
+- Contain the threat quickly
+
+Proper endpoint monitoring and rapid response are critical in minimizing the impact of such attacks.
 
 
