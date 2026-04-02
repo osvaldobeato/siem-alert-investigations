@@ -87,12 +87,14 @@ The SOC team had prior knowledge that a vulnerability assessment was being condu
 
 ### SIEM Alert
 The screenshot below shows the SIEM alert triggered by detected port scanning activity
-![SIEM Alert] <img width="918" height="663" alt="Screenshot 2026-04-02 014214" src="https://github.com/user-attachments/assets/7fdf7086-026d-4adc-b618-f6777c0b5f8d" />
+![SIEM Alert] <img width="918" height="663" alt="case1-siem-alert" src="https://github.com/user-attachments/assets/afadf2d7-011f-47e5-bafe-06cac76561b6" />
+
 
 
 ### Log Analysis
 The screenshot below shows log evidence of multiple connection attempts across different ports from the same source IP
-![Logs] <img width="884" height="646" alt="Screenshot 2026-04-02 014330" src="https://github.com/user-attachments/assets/5f8cc5c6-7df8-4056-aa21-76b70da1ed81" />
+![Logs] <img width="884" height="646" alt="case1-log-analysis" src="https://github.com/user-attachments/assets/34c68a49-62dc-4a25-93db-8162f3edb5b3" />
+
 
 
 
