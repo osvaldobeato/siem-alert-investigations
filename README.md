@@ -1,7 +1,31 @@
 # SIEM Alert Investigations
 
 ## Summary
-This repository contains multiple SIEM alert investigations performed in a SOC lab enviornment. Each case demonstrates log analysis, alert validation and classification of events as true or false positives.
+This repository contains multiple SIEM alert and incident response investigations performed in a SOC (Security Operations Center) lab environment. 
+
+Each case demonstrates alert analysis, log correlation, endpoint investigation, and classification of security events as true or false positives. The projects also showcase hands-on experience with incident response workflows, including detection, investigation, and containment of threats.
+
+---
+
+## Cases
+
+### Case 1: SIEM Alert Investigation
+- Investigated triggered alerts
+- Analyzed suspicious activity
+- Correlated events across logs
+
+### Case 2: SIEM Log Investigation
+- Performed log correlation
+- Identified abnormal behavior patterns
+- Investigated security events
+
+### Case 3: Incident Response (EDR Lab)
+- Investigated phishing attack via email attachment
+- Analyzed endpoint activity using EDR
+- Identified malware execution on host
+- Performed containment actions (quarantine & isolation)
+
+---
 
 ## Case 1: Port Scanning Activity (False Positive)
 
